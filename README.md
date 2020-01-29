@@ -1,7 +1,5 @@
 # README
 
-## 'hello, world!"
-
 Independent website created for CSC 324 at Grinnell College. 
 
 Ruby 2.6.3
