@@ -21,7 +21,12 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
 
     test "should get contact" do
         get contact_path
-        assert_response:success
+        assert_response :success
         assert_select "title" , "Contact | Grinnell Software Development"
+    end
+
+    test "should get shake" do
+        get shake_path
+        assert_response :success
     end
 end
