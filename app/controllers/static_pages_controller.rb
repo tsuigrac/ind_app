@@ -12,7 +12,7 @@ class StaticPagesController < ApplicationController
   end
   
   def shake
-      answer = ["As I see it, yes. ",
+      @answer = ["As I see it, yes. ",
                 "Ask again later.",
                 "Better not tell you now.",
                 "Cannot predict now.",
@@ -32,7 +32,8 @@ class StaticPagesController < ApplicationController
                 "Yes.",
                 "Yes - definitely.",
                 "You may rely on it."]
-    @result = answer[rand(20)]
+      
+    @result = @answer[rand(20)]
   end
 
 end
