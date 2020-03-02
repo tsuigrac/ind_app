@@ -31,8 +31,14 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
         assert_response :success
         assert_select "title", "Habits"
         assert_response :success
-        assert_not_nil(assigns(:result))
-        assert_not_nil(assigns(:answer))
+        assert_not_nil(assigns(:phy_ans))
+        assert_not_nil(assigns(:phy_res))
+        assert_not_nil(assigns(:men_ans))
+        assert_not_nil(assigns(:men_res))
+        assert_not_nil(assigns(:soc_ans))
+        assert_not_nil(assigns(:soc_res))
+        assert_not_nil(assigns(:int_ans))
+        assert_not_nil(assigns(:int_res))
     end
 
     
