@@ -11,7 +11,7 @@ class StaticPagesController < ApplicationController
   def contact
   end
   
-  def shake
+  def habits
       @answer = ["As I see it, yes. ",
                 "Ask again later.",
                 "Better not tell you now.",

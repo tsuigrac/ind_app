@@ -26,10 +26,10 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
         assert_select "title" , "Contact"
     end
 
-    test "should get shake" do
-        get shake_path
+    test "should get habits" do
+        get habits_path
         assert_response :success
-        assert_select "title", "Shake"
+        assert_select "title", "Habits"
         assert_response :success
         assert_not_nil(assigns(:result))
         assert_not_nil(assigns(:answer))

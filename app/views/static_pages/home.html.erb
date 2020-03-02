@@ -1,16 +1,17 @@
 <% provide(:title, "Home") %>
 
 <div class="center jumbotron">
-  <h1>Welcome to my Individual Project</h1>
+  <h1>Healthy Habits</h1>
   <h2>
-    This is the homepage for an website created for the
-    <a href = "https://csc324-326.sites.grinnell.edu/">Software Development</a>
-    class at Grinnell College.
+    Mental, physical, and emotional health is important for happiness and overall
+    well-being. Click the button below to generate 4 healthy habits you should work
+    on today!
   </h2>
 
-  <%= link_to "Magic 8-ball", '/shake', class: "btn btn-lg btn-primary" %>
+  <%= link_to "Generate Habits", '/habits', class: "btn btn-lg btn-primary" %>
 
   <!-- Can add sign up button in 5.1.1 -->
 </div>
 
-<%= link_to image_tag("rails.png", alt: "Rails logo"), 'http://rubyonrails.org/' %>
+<!-- <%= link_to image_tag("rails.png", alt: "Rails logo"), 'http://rubyonrails.org/' %>
+-->

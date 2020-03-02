@@ -26,8 +26,9 @@ textarea {
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1;
+  line-height: 1.5;
 }
+
 
 h1 {
   font-size: 3em;
@@ -45,10 +46,14 @@ h2 {
 }
 
 p {
-  font-size: 1.1em;
-  line-height: 1.7em;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  padding-bottom: 2em;
 }
 
+.jumbotron{
+  background-color: white;
+}
 
 /* header */
 
