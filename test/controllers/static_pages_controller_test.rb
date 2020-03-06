@@ -37,8 +37,6 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
         assert_not_nil(assigns(:men_res))
         assert_not_nil(assigns(:soc_ans))
         assert_not_nil(assigns(:soc_res))
-        assert_not_nil(assigns(:int_ans))
-        assert_not_nil(assigns(:int_res))
     end
 
     
