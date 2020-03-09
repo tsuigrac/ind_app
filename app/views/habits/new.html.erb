@@ -1,13 +1,13 @@
 <% provide(:title, "Habits") %>
 <h1>Habits for Today</h1>
 <h3>Physical Wellness</h3>
-<p>Test</p>
+<p><%= @phy_result.content%></p>
 
 <h3>Mental Wellness</h3>
-<p>Test</p>
+<p><%= @men_result.content%></p>
 
 <h3>Socioemotional Wellness</h3>
-<p>Test</p>
+<p><%= @soc_result.content%></p>
 
 
   <%= link_to "Generate Again", '/habits', class: "btn btn-lg btn-primary" %>
