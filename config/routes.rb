@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   get  '/contact', to: 'static_pages#contact'
   get '/habits', to: 'habits#show'
   get '/login', to: 'static_pages#login'
+  
+  resources :users
 end
