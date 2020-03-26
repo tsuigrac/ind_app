@@ -13,4 +13,7 @@ class User < ApplicationRecord
                       
     #Hash the password
     has_secure_password
+    
+    #Password must be at least 6 characters
+    validates :password, presence: true, length: {minimum: 6}
 end
