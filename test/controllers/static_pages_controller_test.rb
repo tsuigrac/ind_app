@@ -17,7 +17,7 @@ end
 
 test "should get about" do
     get about_path
-    assert_response:success
+    assert_response :success
     assert_select "title" , "About"
 end
 
@@ -27,5 +27,10 @@ test "should get contact" do
     assert_select "title" , "Contact"
 end
 
+test "should get login" do
+    get login_path
+    assert_response :success
+    assert_select "title", "Login"
+end
 
 end

@@ -11,6 +11,9 @@ class StaticPagesController < ApplicationController
   def contact
   end
   
+  def login
+  end
+  
   def habits
       @phy_ans = Array["Get some fresh air! Take a 10-minute walk outside.",
                        "Try to take at least 10,000 steps today!",
