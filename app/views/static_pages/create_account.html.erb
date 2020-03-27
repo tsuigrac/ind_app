@@ -21,20 +21,19 @@
 
       <%= f.label :password_confirmation, "Confirmation" %>
       <%= f.password_field :password_confirmation %>
+      <%= f.submit "Create my account", class: "btn btn-primary center" %>
       <% end %>
     </div>
   </div>
 
   <div class="center">
-
-    <%= link_to "Sign Up", '/habits', class: "btn btn-lg btn-primary" %>
     <p id="login">Already have an account? <%= link_to "Log in", login_path %></p>
     <hr class="align-self-end" style="background: white;">
     <h2>
       Don't want to create an account? Click the button below to generate healthy habits
       without one.
     </h2>
-    <%= link_to "Generate Habits", '/habits', class: "btn btn-lg btn-primary" %>
+    <%= link_to "Generate Habits", '/habits', class: "btn btn-lg btn-primary", style: "font-size: 15px;"%>
   </div>
 </div>
 
