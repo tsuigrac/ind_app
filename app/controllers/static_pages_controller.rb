@@ -1,7 +1,4 @@
 class StaticPagesController < ApplicationController
-  def create_account
-      @user = User.new
-  end
 
   def help
   end
