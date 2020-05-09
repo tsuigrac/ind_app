@@ -5,19 +5,33 @@
     This website was made with the help of Hartl's tutorial and developed using the web-application
     framework Ruby on Rails. I created this website as part of an individual project for the
     <a href="https://csc324-326.sites.grinnell.edu/"><em>CSC 324 Software Development</em>
-    </a> class at Grinnell College. Along with the basic structure of Ruby on Rails websites, such as the MVC
-    design pattern and various naming conventions and routes, I have also learned a lot about databases in the
-    backend of my website. The login page and the healthy habits page both have databases in sqlite3. I currently
-    have a database of Users, which stores information like the username and password and will later store information about personalized habits,
-    as well as a database for the Habits in general. The Habits database is currently seeded with the
-    default habits as currently seen on the corresponding habits page.
+    </a> class at Grinnell College.
   </p>
+
   <p>
-    This website also has several places with embedded Ruby. I use partials for my header (the navigation bar)
-    and the footer. I also use embedded ruby to display randomly selected habits from my database
-    on the Habits page. Additionally, the sign-up form on the Homepage and all images use Ruby tags
-    embedded in the HTML. If you have any questions, please go to the Contact section and feel free to
-    send me an email!
+    Along with the basic structure of Ruby on Rails websites, such as the MVC design pattern
+    and various naming conventions and routes, I have also learned a lot about databases in
+    the backend of my website. The Login page and the Healthy Habits page
+    both have databases using sqlite3. I currently have a database of Users,
+    which currently stores information like the username, email, and names of account holders,
+    and will later store information about personalized habits. I also have a database to store
+    healthy Habits in general. This is the database used to display random healthy habits on
+    the Habits page. Each entry has a category that corersponds to what type of habit it is
+    (physical, mental, socio-emotional). The backend randomly selects and stores an
+    entry of each type and then displays it whenever the Habits page is accessed or
+    refreshed. The database currently uses a seed.rb file for the default habits.
+    Later, I plan on creating a feature where each account holder can personalize
+    his or her habits by deleting or adding some of their own habits, as well as
+    adding some new habits. I use embedded Ruby in the HTML for the Habits page to
+    display the variables created in my controller.
+  </p>
+
+  <p>
+    This website also has several places with embedded Ruby. I use partials for my header
+    (the navigation bar) and the footer. As mentioned above, I also use embedded Ruby to display
+    randomly selected habits from my database on the Habits page. Additionally, the sign-up form
+    on the Homepage and all images use Ruby tags embedded in the HTML. If you have any questions,
+    please go to the Contact section and feel free to send me an email!
   </p>
   <%= image_tag("rails.png", size: "80x100", alt: "Rails Logo")%>
 </body>
